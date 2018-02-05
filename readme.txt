@@ -14,4 +14,4 @@ study git command :
 			git diff	---查看提交project的不同之处
 			git status	---查看git仓库状态
 
-	
+	发生的发生
