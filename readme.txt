@@ -13,5 +13,7 @@ study git command :
 			git commit -m "dec"		---提交文件到git仓库
 			git diff	---查看提交project的不同之处
 			git status	---查看git仓库状态
-
-	发生的发生
+			git log 	--查看历史记录
+			git log --pretty=oneline 	--只显示描述和版本号
+			git reset -hard	版本号		--回退到某一个版本	注意：HERD^ 表示回退到上一个版本HEAD^^表示回退到上上一个版本……
+			git reflog	--记录历史命令
