@@ -16,4 +16,4 @@ study git command :
 			git log 	--查看历史记录
 			git log --pretty=oneline 	--只显示描述和版本号
 			git reset -hard	版本号		--回退到某一个版本	注意：HERD^ 表示回退到上一个版本HEAD^^表示回退到上上一个版本……
-			git reflog	--记录历史命令
+			git reflog	--记录历史提交(即：commit和reset)
