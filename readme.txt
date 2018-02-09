@@ -28,5 +28,14 @@ study git command :
 			删除文件：
 					rm 文件名		--删除本地工作区的文件（rm命令删除文件，删除文件夹需要带参数-r,rmdir命令仅仅删除空目录，详细查看Linux命令行手册）
 					git rm 文件名	--删除版本库中的文件。注意：如果删除的文件没有被提交，则该命令会报错。
+			配置远程仓库,看看用户主目录下(C:\Users\admin\.ssh)，有没有.ssh目录，有则跳过，无则创建SSH Key：
+				ssh-keygen -t rsa -C "邮箱地址"
+				配置完SSH Key后登陆GitHub把id_rsa.pub的文件内容复制到GitHub的‘Add SSH key ’中添加SSH
+			添加远程仓库：
+				GitHub上新建仓库；然后可以从新建的远程仓库克隆出一个新的，也可以把本地已经存在的本地仓库与之关联，然后把本地内容推送到GitHub上
+				关联命令：	git remote add  远程仓库名(自起) git@github.com:sunbowenqz/dsfs.git
+				推送命令：	git push -u origin master		--origin是关联时任意起的远程仓库名字而已， master分支。
+				
+			
 					
 			
