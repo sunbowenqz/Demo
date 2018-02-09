@@ -19,6 +19,7 @@ linux command:
 			输入 vim 文件名  后默认进入vim导航模式，导航模式下快捷键hjkl代表：左下上右;w --下一个单词,b	--前有一个单词,Ctrl+f	--下翻页
 			Ctrl+b --上翻页；按a,i,o,进入编辑模式，推荐使用i；
 			编辑完内容后按Esc键进入命令模式,命令模式下输入	:w --保存	:q	--退出  :q!	--不保存退出	常用	:wq --保存并退出
+			vim命令图：http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif
 study git command :
 			git init;	---初始化本地git仓库
 			git add file;	---添加文件
