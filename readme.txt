@@ -7,6 +7,18 @@ linux command:
 		mv oldName	newName:修改文件名
 		rm 删除文件。 rm -r 递归删除目录下的文件然后再删除自己
 		rmdir删除目录(只能删除空目录)
+		cat 文件名	--查看文件内容的	--一次性全部显示完
+		more 文件名 --查看文件内容的(windows的git不支持该命令)	--一次只显示一个屏幕，需要用空格或者回车查看剩余内容
+		less 文件名	--查看文件内容的	--一次只显示一个屏幕，需要用空格或者回车查看剩余内容
+		tail -n 文件名	--只显示文件最后几行 -n 代表参数可以设置数值
+			如： tail -n 10 readme.txt
+				 tail -10 readme.txt			--两种输入皆可
+		head -n 文件名	--只显示文件头部。用法同上。
+		vim 文件名 --进入vim编译器，编辑文件：具体vim使用可以查看CSDN里的内容	http://blog.csdn.net/fungleo/article/details/53128157
+		vim简单入门要熟悉vim请移步CSDN；
+			输入 vim 文件名  后默认进入vim导航模式，导航模式下快捷键hjkl代表：左下上右;w --下一个单词,b	--前有一个单词,Ctrl+f	--下翻页
+			Ctrl+b --上翻页；按a,i,o,进入编辑模式，推荐使用i；
+			编辑完内容后按Esc键进入命令模式,命令模式下输入	:w --保存	:q	--退出  :q!	--不保存退出	常用	:wq --保存并退出
 study git command :
 			git init;	---初始化本地git仓库
 			git add file;	---添加文件
@@ -34,8 +46,11 @@ study git command :
 			添加远程仓库：
 				GitHub上新建仓库；然后可以从新建的远程仓库克隆出一个新的，也可以把本地已经存在的本地仓库与之关联，然后把本地内容推送到GitHub上
 				关联命令：	git remote add  远程仓库名(自起) git@github.com:sunbowenqz/dsfs.git
-				推送命令：	git push -u origin master		--origin是关联时任意起的远程仓库名字而已， master分支。
-				
+				第一次推送命令：	git push -u origin master		--origin是关联时任意起的远程仓库名字而已， master分支。
+				在以上所有操作关联以及推送完成以后，我们的推送命令直接： git push 远程仓库名 master 即可。
+			从远程仓库克隆项目：
+				git clone https://github.com/sunbowenqz/Demo.git    	--git支持https,但通过ssh“支持的“的原生git协议速度最快
+			
 			
 					
 			
